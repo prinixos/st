@@ -1,183 +1,88 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo_name, twitter_handle, email, project_title, project_description
--->
+<!-- Add banner here -->
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+![Banner](https://github.com/navendu-pottekkat/awesome-readme/blob/master/header.png)
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<center>
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+<img src="./logo.svg" width="100px">
+<br/>
 
-  <h3 align="center">project_title</h3>
+# Suckless Terminal (ST)
 
-  <p align="center">
-    project_description
-    <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
-  </p>
-</p>
+</center>
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href"#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
+<!-- Add buttons here -->
+<center>
 
-<!-- ABOUT THE PROJECT -->
+![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/prinixos/st?include_prereleases)
+![GitHub last commit](https://img.shields.io/github/last-commit/prinixos/st/master)
+![GitHub issues](https://img.shields.io/github/issues-raw/prinixos/st)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/prinixos/st)
+![GitHub](https://img.shields.io/github/license/prinixos/st)
 
-## About The Project
+</center>
+<!-- Describe your project in brief -->
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+The suckless terminal (st) with some additional features that make it literally the best terminal emulator ever :
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+<br/>
+<center>
+<img src="./screenshot-before.png">
+</center>
 
-### Built With
+<br/>
 
-- []()
-- []()
-- []()
+Suckless terminal is based suckless philosiphy which means its really light weight and full flegid terminal emulator. But the problems are its too lightweight for a normal it doesn't have some basic functionality like scrolling up and down or to copy some text but with some mods suckless terminal it could becoma one of the best terminal emulator that a mankind had ever see.
 
-<!-- GETTING STARTED -->
+Can you also costomize it on top of my patches? Yes ofcourse you can you can not only add your packages on top of my but you can also remove my packages not only extensions but also themes currently I am using gruvbox theme its a best theme for me its calm dusky and great. Let's see which color scheme you might use.
 
-## Getting Started
+## Pretty stuff
 
-To get a local copy up and running follow these simple steps.
+- Compatibility with Xresources and pywal for dynamic colors.
+- Default gruvbox colors otherwise.
+- Transparency/alpha, which is also adjustable from your Xresources.
+- Default font is system "mono" at 14pt, meaning the font will match your system font.
 
-### Prerequisites
+## Installation for newbs
 
-This is an example of how to list things you need to use the software and how to install them.
+```
+    git clone https://github.com/prinixos/st
+    cd st
+    sudo make install
+```
 
-- npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Obviously, `make` is required to build. `fontconfig` is required for the default build, since it asks `fontconfig` for your system monospace font. It might be obvious, but `libX11`and `libXft` are required as well. Chances are, you have all of this installed already.
 
-### Installation
+On OpenBSD, be sure to edit `config.mk` first and remove `-lrt` from the `$LIBS` before compiling.
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+Be sure to have a composite manager (`xcompmgr`, `picom`, etc.) running if you want transparency.
 
-<!-- USAGE EXAMPLES -->
+# Table of contents
 
-## Usage
+After you have introduced your project, it is a good idea to add a **Table of contents** or **TOC** as **cool** people say it. This would make it easier for people to navigate through your README and find exactly what they are looking for.
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+Here is a sample TOC(_wow! such cool!_) that is actually the TOC for this README.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+- [Project Title](#project-title)
+- [Demo-Preview](#demo-preview)
+- [Table of contents](#table-of-contents)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
+- [Contribute](#contribute)
+  - [Sponsor](#sponsor)
+  - [Adding new features or fixing bugs](#adding-new-features-or-fixing-bugs)
+- [License](#license)
+- [Footer](#footer)
 
-<!-- ROADMAP -->
+# Development
 
-## Roadmap
+[(Back to top)](#table-of-contents)
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+This is the place where you give instructions to developers on how to modify the code.
 
-<!-- CONTRIBUTING -->
+You could give **instructions in depth** of **how the code works** and how everything is put together.
 
-## Contributing
+You could also give specific instructions to how they can setup their development environment.
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<!-- LICENSE -->
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-<!-- CONTACT -->
-
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## Acknowledgements
-
-- []()
-- []()
-- []()
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-
-# [linkedin-url]: https://linkedin.com/in/github_username
+Ideally, you should keep the README simple. If you need to add more complex explanations, use a wiki. Check out [this wiki](https://github.com/navendu-pottekkat/nsfw-filter/wiki) for inspiration.
