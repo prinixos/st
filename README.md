@@ -1,10 +1,7 @@
 <!-- Add banner here -->
 
-![Banner](https://github.com/navendu-pottekkat/awesome-readme/blob/master/header.png)
+![Banner](./headder.svg)
 
-<center>
-
-<img src="./logo.svg" width="100px">
 <br/>
 
 # Suckless Terminal (ST)
